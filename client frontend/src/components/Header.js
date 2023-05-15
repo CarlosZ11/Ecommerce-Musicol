@@ -32,25 +32,23 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center display-none">
-              <p>+255 768 356 890</p>
-              <p>info@zpunet.com</p>
+              <p>
+                  <b>Envío Gratis</b> Por compras mayores a $500.000
+              </p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <Link to="">
+              <a href="https://www.facebook.com/people/Musicol-Colombia/100091311345713/">
                 <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://www.instagram.com/musicol.col/">
                 <i className="fab fa-instagram"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://www.youtube.com/channel/UCf9nohgRZn-ZxVGMqmCusrQ">
                 <i className="fab fa-youtube"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-pinterest-p"></i>
-              </Link>
+              </a>
+              <a href="https://twitter.com/MusicolCol">
+                <i className="fab fa-twitter"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -64,7 +62,7 @@ const Header = () => {
               <div className="row ">
                 <div className="col-6 d-flex align-items-center">
                   <Link className="navbar-brand" to="/">
-                    <img alt="logo" src="/images/logo.png" />
+                    <img alt="logo" src="/images/logoHeader.png" />
                   </Link>
                 </div>
                 <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
@@ -81,7 +79,7 @@ const Header = () => {
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/profile">
-                          Profile
+                          Perfil
                         </Link>
 
                         <Link
@@ -89,7 +87,7 @@ const Header = () => {
                           to="#"
                           onClick={logoutHandler}
                         >
-                          Logout
+                          Cerrar Sesión
                         </Link>
                       </div>
                     </div>
@@ -106,11 +104,11 @@ const Header = () => {
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/login">
-                          Login
+                          Iniciar sesión
                         </Link>
 
                         <Link className="dropdown-item" to="/register">
-                          Register
+                          Registrar
                         </Link>
                       </div>
                     </div>
@@ -126,11 +124,11 @@ const Header = () => {
                     <input
                       type="search"
                       className="form-control rounded search"
-                      placeholder="Search"
+                      placeholder="¿Qué está buscando?"
                       onChange={(e) => setKeyword(e.target.value)}
                     />
                     <button type="submit" className="search-button">
-                      search
+                      buscar
                     </button>
                   </form>
                 </div>
@@ -143,7 +141,7 @@ const Header = () => {
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
                 <Link className="navbar-brand" to="/">
-                  <img alt="logo" src="/images/logo.png" />
+                  <img alt="logo" src="/images/logoHeader.png" />
                 </Link>
               </div>
               <div className="col-md-6 col-8 d-flex align-items-center">
@@ -151,11 +149,11 @@ const Header = () => {
                   <input
                     type="search"
                     className="form-control rounded search"
-                    placeholder="Search"
+                    placeholder="¿Qué está buscando?"
                     onChange={(e) => setKeyword(e.target.value)}
                   />
                   <button type="submit" className="search-button">
-                    search
+                    buscar
                   </button>
                 </form>
               </div>
@@ -169,11 +167,11 @@ const Header = () => {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Hi, {userInfo.name}
+                      Hola, {userInfo.name}
                     </button>
                     <div className="dropdown-menu">
                       <Link className="dropdown-item" to="/profile">
-                        Profile
+                        Perfil
                       </Link>
 
                       <Link
@@ -181,14 +179,14 @@ const Header = () => {
                         to="#"
                         onClick={logoutHandler}
                       >
-                        Logout
+                        Cerrar Sesión
                       </Link>
                     </div>
                   </div>
                 ) : (
                   <>
-                    <Link to="/register">Register</Link>
-                    <Link to="/login">Login</Link>
+                    <Link to="/register">Registrar</Link>
+                    <Link to="/login">Iniciar sesión</Link>
                   </>
                 )}
 
