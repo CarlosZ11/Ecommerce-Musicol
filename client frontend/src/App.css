@@ -159,7 +159,7 @@ textarea:focus {
 }
 .border-product {
     padding: 15px;
-    border: 1px solid #f3f3f3;
+    border: 1px solid hsl(255, 100%, 97%);
     border-radius: 5px;
 }
 .shopBack {
@@ -167,7 +167,8 @@ textarea:focus {
     position: relative;
     overflow: hidden;
     width: 100%;
-    background-color: #f3fbf7;
+    background-color: hsl(255, 100%, 97%);
+    border-radius: 5px;
 }
 .shopBack img {
     width: 100%;
@@ -205,7 +206,7 @@ textarea:focus {
             rgba(0, 0, 0, 0.226),
             rgba(0, 0, 0, 0.226)
         ),
-        url("https://sasshoes-com.s3.us-west-2.amazonaws.com/img/banner-uplift-21.jpg")
+        url("../public/images/banner-1.jpg")
             no-repeat scroll center / cover;
     padding: 100px 0 100px;
 }
@@ -238,7 +239,7 @@ textarea:focus {
     width: 460px;
 }
 .form-section input[type="submit"] {
-    background: #1cb803;
+    background: hsl(271, 83%, 16%);
     border: 0 none;
     border-radius: 25px;
     color: #fff;
@@ -251,7 +252,7 @@ textarea:focus {
 }
 /* CONTACT */
 .contactInfo {
-    padding: 70px 0;
+    padding: 20px 0;
 }
 .contact-Box,
 .box-info,
@@ -269,10 +270,10 @@ textarea:focus {
 .info-image {
     width: 50px;
     height: 50px;
-    border: 2px solid #1cb803;
+    border: 2px solid hsl(248, 68%, 58%);
     border-radius: 100px;
     font-size: 20px;
-    color: #1cb803;
+    color: hsl(248, 68%, 58%);
 }
 .box-info h5 {
     font-weight: bold;
@@ -282,6 +283,7 @@ textarea:focus {
 }
 .box-info p {
     font-size: 16px;
+    text-align: center;
 }
 
 /* SINGLE PRODUCT */
@@ -576,7 +578,7 @@ textarea:focus {
 }
 /* FOOTER */
 .footer {
-    background-color: #ececec;
+    background-color: hsl(255, 100%, 92%);
 }
 .card-name {
     width: 4%;
