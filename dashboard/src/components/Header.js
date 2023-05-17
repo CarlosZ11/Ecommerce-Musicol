@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header className="main-header navbar">
-      <div className="col-search">
+      {/* <div className="col-search">
         <form className="searchform">
           <div className="input-group">
             <input
@@ -51,7 +51,8 @@ const Header = () => {
             <option value="Ahmed Hassan" />
           </datalist>
         </form>
-      </div>
+      </div> */}
+      
       <div className="col-nav">
         <button
           className="btn btn-icon btn-mobile me-auto"
@@ -65,37 +66,37 @@ const Header = () => {
               <i className="fas fa-moon"></i>
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className="nav-link btn-icon" to="#">
               <i className="fas fa-bell"></i>
             </Link>
-          </li>
-          <li className="nav-item">
+          </li> */}
+          {/* <li className="nav-item">
             <Link className="nav-link" to="#">
               English
             </Link>
-          </li>
+          </li> */}
           <li className="dropdown nav-item">
             <Link className="dropdown-toggle" data-bs-toggle="dropdown" to="#">
               <img
                 className="img-xs rounded-circle"
-                src="/images/favicon.png"
+                src="/images/favicon1.png"
                 alt="User"
               />
             </Link>
             <div className="dropdown-menu dropdown-menu-end">
-              <Link className="dropdown-item" to="/">
+              {/* <Link className="dropdown-item" to="/">
                 My profile
               </Link>
               <Link className="dropdown-item" to="#">
                 Settings
-              </Link>
+              </Link> */}
               <Link
                 onClick={logoutHandler}
                 className="dropdown-item text-danger"
                 to="#"
               >
-                Exit
+                Salir
               </Link>
             </div>
           </li>

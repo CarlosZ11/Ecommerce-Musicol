@@ -8,14 +8,14 @@ const Orders = (props) => {
     <table className="table">
       <thead>
         <tr>
-          <th scope="col">Name</th>
+          <th scope="col">Nombre</th>
           <th scope="col">Email</th>
           <th scope="col">Total</th>
-          <th scope="col">Paid</th>
-          <th scope="col">Date</th>
-          <th>Status</th>
+          <th scope="col">Pagado</th>
+          <th scope="col">Fecha</th>
+          <th>Estado</th>
           <th scope="col" className="text-end">
-            Action
+            Acción
           </th>
         </tr>
       </thead>
@@ -30,20 +30,20 @@ const Orders = (props) => {
             <td>
               {order.isPaid ? (
                 <span className="badge rounded-pill alert-success">
-                  Paid At {moment(order.paidAt).format("MMM Do YY")}
+                  Pagado en {moment(order.paidAt).format("MMM D YYYY")}
                 </span>
               ) : (
                 <span className="badge rounded-pill alert-danger">
-                  Not Paid
+                  No pagado
                 </span>
               )}
             </td>
-            <td>{moment(order.createdAt).format("MMM Do YY")}</td>
+            <td>{moment(order.createdAt).format("MMM D YYYY")}</td>
             <td>
               {order.isDelivered ? (
-                <span className="badge btn-success">Delivered</span>
+                <span className="badge btn-success">Entregado</span>
               ) : (
-                <span className="badge btn-dark">Not delivered</span>
+                <span className="badge btn-dark">No entregado</span>
               )}
             </td>
             <td className="d-flex justify-content-end align-item-center">

@@ -39,30 +39,31 @@ const Register = ({ location, history }) => {
         <form
           className="Login col-md-8 col-lg-4 col-11"
           onSubmit={submitHandler}
+          style={{backgroundColor: "hsl(255, 100%, 92%)"}}
         >
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Nombre de usuario"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Correo electrónico"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Contraseña"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <button type="submit">Register</button>
+          <button style={{backgroundColor: "hsl(248, 68%, 58%)"}} type="submit">Registrarse</button>
           <p>
             <Link to={redirect ? `/login?redirect=${redirect}` : "/login"}>
-              I Have Account <strong>Login</strong>
+              Tengo una cuenta, <strong>Iniciar sesión</strong>
             </Link>
           </p>
         </form>

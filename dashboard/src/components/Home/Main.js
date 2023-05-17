@@ -13,8 +13,9 @@ const Main = () => {
   return (
     <>
       <section className="content-main">
+        
         <div className="content-header">
-          <h2 className="content-title"> Dashboard </h2>
+          <h2 className="content-title"> Panel principal </h2>
         </div>
         {/* Top Total */}
         <TopTotal orders={orders} products={products} />

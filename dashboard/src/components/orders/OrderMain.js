@@ -11,36 +11,36 @@ const OrderMain = () => {
   return (
     <section className="content-main">
       <div className="content-header">
-        <h2 className="content-title">Orders</h2>
+        <h2 className="content-title">Pedidos</h2>
       </div>
 
       <div className="card mb-4 shadow-sm">
-        <header className="card-header bg-white">
+        {/* <header className="card-header bg-white">
           <div className="row gx-3 py-3">
             <div className="col-lg-4 col-md-6 me-auto">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Buscar"
                 className="form-control p-2"
               />
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>Status</option>
-                <option>Active</option>
-                <option>Disabled</option>
-                <option>Show all</option>
+                <option>Estado</option>
+                <option>Activo</option>
+                <option>Inactivo</option>
+                <option>Mostrar todo</option>
               </select>
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>Show 20</option>
-                <option>Show 30</option>
-                <option>Show 40</option>
+                <option>Mostrar 20</option>
+                <option>Mostrar 30</option>
+                <option>Mostrar 40</option>
               </select>
             </div>
           </div>
-        </header>
+        </header> */}
         <div className="card-body">
           <div className="table-responsive">
             {loading ? (

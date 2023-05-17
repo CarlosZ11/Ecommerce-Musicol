@@ -8,7 +8,7 @@ const Product = (props) => {
   const dispatch = useDispatch();
 
   const deletehandler = (id) => {
-    if (window.confirm("Are you sure??")) {
+    if (window.confirm("Está seguro?")) {
       dispatch(deleteProduct(id));
     }
   };

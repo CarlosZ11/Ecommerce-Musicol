@@ -25,8 +25,8 @@ a.disabled {
   pointer-events: none;
 }
 .btn-primary {
-  background-color: #4fa607 !important;
-  border: 1px solid #4fa607 !important;
+  background-color: hsl(248, 68%, 58%) !important;
+  border: 1px solid hsl(248, 68%, 58%) !important;
 }
 .Header-green {
   background-color: #4fa607;
@@ -194,6 +194,7 @@ body.offcanvas-active {
   height: 46px;
   width: auto;
   max-width: 200px;
+  margin-left: 15px;
 }
 
 .main-header {
@@ -214,7 +215,7 @@ body.offcanvas-active {
 }
 .main-header .nav-link:hover {
   background-color: #e9ecef;
-  color: #4fa607;
+  color: hsl(248, 68%, 58%);
 }
 .main-header .col-search {
   flex-grow: 0.5;
@@ -222,13 +223,14 @@ body.offcanvas-active {
 .main-header .col-nav {
   display: flex;
   align-items: center;
+  margin-left: 939px;
 }
 
 .nav-item img.rounded-circle {
   border: 2px solid #eee;
 }
 .nav-item img.rounded-circle:hover {
-  border-color: #4fa607;
+  border-color: hsl(248, 68%, 58%);
 }
 
 .content-header {
@@ -315,7 +317,7 @@ body.aside-mini .menu-aside .menu-item.has-submenu .menu-link:after {
   font-size: 18px;
 }
 .menu-aside .active .icon {
-  color: #4fa607;
+  color: hsl(248, 68%, 58%);
 }
 .menu-aside .active {
   background-color: #ebf0fd;
@@ -529,7 +531,7 @@ a.itemside:hover .title {
 .card-user .card-header {
   position: relative;
   height: 100px;
-  background-color: #c3f19d !important;
+  background-color: hsl(248, 68%, 78%) !important;
   text-align: center;
 }
 .card-user .img-avatar {
@@ -828,7 +830,7 @@ ul.row-sm {
 
 .form-control:hover,
 .form-select:hover {
-  border-color: #4fa607;
+  border-color: hsl(248, 68%, 58%);;
 }
 
 .btn-facebook {
