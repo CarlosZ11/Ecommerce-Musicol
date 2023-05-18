@@ -359,7 +359,44 @@ textarea:focus {
 }
 .round-black-btn:hover,
 .round-black-btn:focus {
-    background: #1cb803;
+    background: hsl(248, 68%, 58%);
+}
+
+.btn-realizar-pedido {
+    /* width: 15em;
+    height: 3em; */
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.btn-realizar-pedido::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to
+        right, hsl(248, 68%, 58%) 0%, hsl(271, 83%, 16%) 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn-realizar-pedido:hover {
+    color: white;
+}
+
+.btn-realizar-pedido:hover::before {
+    width: 24em;
 }
 
 /* LOGIN */
@@ -609,8 +646,9 @@ textarea:focus {
     margin-top: 2px;
 }
 .order-detail {
-    padding: 30px 0;
-    background-color: #e5fee9;
+    padding: 30px 0 0px;
+    background-color: hsl(255, 100%, 94%);
+    
 }
 .order-detail h5 {
     margin-bottom: 6px;

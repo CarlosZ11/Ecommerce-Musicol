@@ -41,6 +41,8 @@ const CartScreen = ({ match, location, history }) => {
               to="/"
               style={{
                 fontSize: "12px",
+                backgroundColor: "hsl(248, 68%, 58%)",
+                borderColor: "hsl(248, 68%, 58%)",
               }}
             >
               COMPRAR AHORA

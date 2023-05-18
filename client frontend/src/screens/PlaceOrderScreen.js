@@ -62,8 +62,8 @@ const PlaceOrderScreen = ({ history }) => {
           <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
             <div className="row ">
               <div className="col-md-4 center">
-                <div className="alert-success order-box">
-                  <i class="fas fa-user"></i>
+                <div className="alert-success order-box" style={{backgroundColor: "hsl(248, 68%, 80%)"}}>
+                  <i class="fas fa-user" style={{color: "hsl(248, 68%, 20%)"}}></i>
                 </div>
               </div>
               <div className="col-md-8 center">
@@ -79,8 +79,8 @@ const PlaceOrderScreen = ({ history }) => {
           <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
             <div className="row">
               <div className="col-md-4 center">
-                <div className="alert-success order-box">
-                  <i className="fas fa-truck-moving"></i>
+                <div className="alert-success order-box" style={{backgroundColor: "hsl(248, 68%, 80%)"}}>
+                  <i className="fas fa-truck-moving" style={{color: "hsl(248, 68%, 20%)"}}></i>
                 </div>
               </div>
               <div className="col-md-8 center">
@@ -96,8 +96,8 @@ const PlaceOrderScreen = ({ history }) => {
           <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
             <div className="row">
               <div className="col-md-4 center">
-                <div className="alert-success order-box">
-                  <i className="fas fa-map-marker-alt"></i>
+                <div className="alert-success order-box" style={{backgroundColor: "hsl(248, 68%, 80%)"}}>
+                  <i className="fas fa-map-marker-alt" style={{color: "hsl(248, 68%, 20%)"}}></i>
                 </div>
               </div>
               <div className="col-md-8 center">
@@ -174,7 +174,8 @@ const PlaceOrderScreen = ({ history }) => {
               </tbody>
             </table>
             {cart.cartItems.length === 0 ? null : (
-              <button type="submit" onClick={placeOrderHandler}>
+              <button className="btn-realizar-pedido" type="submit" onClick={placeOrderHandler} 
+              style={{backgroundColor: "hsl(248, 68%, 58%)"}} >
                 Realizar pedido
               </button>
             )}

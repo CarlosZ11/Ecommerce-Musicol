@@ -58,7 +58,10 @@ const ShippingScreen = ({ history }) => {
             required
             onChange={(e) => setCountry(e.target.value)}
           />
-          <button type="submit">Continuar</button>
+          <button style={{backgroundColor: "hsl(248, 68%, 58%)", borderColor: "hsl(248, 68%, 58%)",}} 
+          type="submit">
+            Continuar
+          </button>
         </form>
       </div>
     </>
