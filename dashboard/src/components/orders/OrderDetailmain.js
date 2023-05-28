@@ -11,6 +11,7 @@ import Loading from "../LoadingError/Loading";
 import Message from "../LoadingError/Error";
 import moment from "moment";
 
+
 const OrderDetailmain = (props) => {
   const { orderId } = props;
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ const OrderDetailmain = (props) => {
     <section className="content-main">
       <div className="content-header">
         <Link to="/orders" className="btn btn-dark text-white">
-          Back To Orders
+          Volver a pedidos
         </Link>
       </div>
 
@@ -43,7 +44,7 @@ const OrderDetailmain = (props) => {
         <Message variant="alert-danger">{error}</Message>
       ) : (
         <div className="card">
-          <header className="card-header p-3 Header-green">
+          <header className="card-header p-3 Header-purple">
             <div className="row align-items-center ">
               <div className="col-lg-6 col-md-6">
                 <span>
@@ -54,10 +55,10 @@ const OrderDetailmain = (props) => {
                 </span>
                 <br />
                 <small className="text-white mx-3 ">
-                  Order ID: {order._id}
+                  Id pedido: {order._id}
                 </small>
               </div>
-              <div className="col-lg-6 col-md-6 ms-auto d-flex justify-content-end align-items-center">
+              {/* <div className="col-lg-6 col-md-6 ms-auto d-flex justify-content-end align-items-center">
                 <select
                   className="form-select d-inline-block"
                   style={{ maxWidth: "200px" }}
@@ -71,7 +72,7 @@ const OrderDetailmain = (props) => {
                 <Link className="btn btn-success ms-2" to="#">
                   <i className="fas fa-print"></i>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </header>
           <div className="card-body">
@@ -88,9 +89,9 @@ const OrderDetailmain = (props) => {
               <div className="col-lg-3">
                 <div className="box shadow-sm bg-light">
                   {order.isDelivered ? (
-                    <button className="btn btn-success col-12">
-                      DELIVERED AT ({" "}
-                      {moment(order.isDeliveredAt).format("MMM Do YY")})
+                    <button className="btn btn-success col-12" style={{backgroundColor: "hsl(248, 68%, 58%)", borderColor: "hsl(248, 68%, 58%)"}}>
+                      ENTREGADO EN ({"  "}
+                      {moment(order.isDeliveredAt).format("MMM D YYYY")})
                     </button>
                   ) : (
                     <>

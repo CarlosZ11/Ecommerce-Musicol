@@ -58,52 +58,56 @@ const ProfileTabs = () => {
       <form className="row  form-container" onSubmit={submitHandler}>
         <div className="col-md-6">
           <div className="form">
-            <label for="account-fn">UserName</label>
+            <label for="account-fn">Nombre de usuario</label>
             <input
               className="form-control"
               type="text"
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
+              style={{backgroundColor: "hsl(255, 100%, 92%)"}}
             />
           </div>
         </div>
 
         <div className="col-md-6">
           <div className="form">
-            <label for="account-email">E-mail Address</label>
+            <label for="account-email">Dirección de correo electrónico</label>
             <input
               className="form-control"
               type="email"
               value={email}
               required
               onChange={(e) => setEmail(e.target.value)}
+              style={{backgroundColor: "hsl(255, 100%, 92%)"}}
             />
           </div>
         </div>
         <div className="col-md-6">
           <div className="form">
-            <label for="account-pass">New Password</label>
+            <label for="account-pass">Nueva contraseña</label>
             <input
               className="form-control"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              style={{backgroundColor: "hsl(255, 100%, 92%)"}}
             />
           </div>
         </div>
         <div className="col-md-6">
           <div className="form">
-            <label for="account-confirm-pass">Confirm Password</label>
+            <label for="account-confirm-pass">Confirmar contraseña</label>
             <input
               className="form-control"
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
+              style={{backgroundColor: "hsl(255, 100%, 92%)"}}
             />
           </div>
         </div>
-        <button type="submit">Update Profile</button>
+        <button type="submit" style={{backgroundColor: "hsl(248, 68%, 58%)"}}>Actualizar perfil</button>
       </form>
     </>
   );

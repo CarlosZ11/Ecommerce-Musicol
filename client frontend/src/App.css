@@ -111,7 +111,7 @@ textarea:focus {
     margin: 0 !important;
 }
 .dropdown-menu a:hover {
-    background-color: #1cb803 !important;
+    background-color: hsl(248, 68%, 58%) !important;
     color: #ffffff !important;
 }
 .mobile-header {
@@ -481,13 +481,13 @@ textarea:focus {
     border-top: 1px solid #e4e4e4;
 }
 .wizard .nav .active {
-    background-color: #e5fee9;
+    background-color: hsl(255, 100%, 92%);
     color: black;
 }
 .badge2 {
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: hsl(248, 68%, 58%);
     display: flex;
     justify-content: center;
     align-items: center;

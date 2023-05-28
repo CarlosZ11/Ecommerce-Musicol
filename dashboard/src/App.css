@@ -28,8 +28,8 @@ a.disabled {
   background-color: hsl(248, 68%, 58%) !important;
   border: 1px solid hsl(248, 68%, 58%) !important;
 }
-.Header-green {
-  background-color: #4fa607;
+.Header-purple {
+  background-color: hsl(248, 68%, 58%) !important;
 }
 /* .screen-overlay {
   width: 0%;
@@ -212,6 +212,7 @@ body.offcanvas-active {
   color: #adb5bd;
   display: block;
   text-decoration: none;
+  margin-left: 30px;
 }
 .main-header .nav-link:hover {
   background-color: #e9ecef;
@@ -830,7 +831,7 @@ ul.row-sm {
 
 .form-control:hover,
 .form-select:hover {
-  border-color: hsl(248, 68%, 58%);;
+  border-color: hsl(248, 68%, 58%);
 }
 
 .btn-facebook {

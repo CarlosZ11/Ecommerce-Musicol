@@ -48,7 +48,7 @@ const Orders = (props) => {
             </td>
             <td className="d-flex justify-content-end align-item-center">
               <Link to={`/order/${order._id}`} className="text-success">
-                <i className="fas fa-eye"></i>
+                <i className="fas fa-eye" style={{color: "hsl(248, 68%, 58%)"}}></i>
               </Link>
             </td>
           </tr>

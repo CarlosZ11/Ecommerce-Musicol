@@ -37,16 +37,16 @@ const Header = () => {
               </p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <a href="https://www.facebook.com/people/Musicol-Colombia/100091311345713/">
+              <a href="https://www.facebook.com/people/Musicol-Colombia/100091311345713/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/musicol.col/">
+              <a href="https://www.instagram.com/musicol.col/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://www.youtube.com/channel/UCf9nohgRZn-ZxVGMqmCusrQ">
+              <a href="https://www.youtube.com/channel/UCf9nohgRZn-ZxVGMqmCusrQ" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-youtube"></i>
               </a>
-              <a href="https://twitter.com/MusicolCol">
+              <a href="https://twitter.com/MusicolCol" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
             </div>

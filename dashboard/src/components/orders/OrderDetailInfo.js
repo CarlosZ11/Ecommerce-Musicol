@@ -6,11 +6,11 @@ const OrderDetailInfo = (props) => {
     <div className="row mb-5 order-info-wrap">
       <div className="col-md-6 col-lg-4">
         <article className="icontext align-items-start">
-          <span className="icon icon-sm rounded-circle alert-success">
-            <i className="text-success fas fa-user"></i>
+          <span className="icon icon-sm rounded-circle alert-success" style={{backgroundColor: "hsl(248, 68%, 80%)"}} >
+            <i className="fas fa-user" style={{color: "hsl(248, 68%, 20%)"}}></i>
           </span>
           <div className="text">
-            <h6 className="mb-1">Customer</h6>
+            <h6 className="mb-1">Cliente</h6>
             <p className="mb-1">
               {order.user.name} <br />
               <a href={`mailto:${order.user.email}`}>{order.user.email}</a>
@@ -20,13 +20,13 @@ const OrderDetailInfo = (props) => {
       </div>
       <div className="col-md-6 col-lg-4">
         <article className="icontext align-items-start">
-          <span className="icon icon-sm rounded-circle alert-success">
-            <i className="text-success fas fa-truck-moving"></i>
+          <span className="icon icon-sm rounded-circle alert-success" style={{backgroundColor: "hsl(248, 68%, 80%)"}}>
+            <i className="fas fa-truck-moving" style={{color: "hsl(248, 68%, 20%)"}}></i>
           </span>
           <div className="text">
-            <h6 className="mb-1">Order info</h6>
+            <h6 className="mb-1">Información del pedido</h6>
             <p className="mb-1">
-              Shipping: {order.shippingAddress.country} <br /> Pay method:{" "}
+              Envío: {order.shippingAddress.country} <br /> Método de pago:{" "}
               {order.paymentMethod}
             </p>
           </div>
@@ -34,13 +34,13 @@ const OrderDetailInfo = (props) => {
       </div>
       <div className="col-md-6 col-lg-4">
         <article className="icontext align-items-start">
-          <span className="icon icon-sm rounded-circle alert-success">
-            <i className="text-success fas fa-map-marker-alt"></i>
+          <span className="icon icon-sm rounded-circle alert-success" style={{backgroundColor: "hsl(248, 68%, 80%)"}}>
+            <i className="fas fa-map-marker-alt" style={{color: "hsl(248, 68%, 20%)"}}></i>
           </span>
           <div className="text">
-            <h6 className="mb-1">Deliver to</h6>
+            <h6 className="mb-1">Entregar en</h6>
             <p className="mb-1">
-              Address: {order.shippingAddress.city}
+              Dirección: {order.shippingAddress.city}
               <br />
               {order.shippingAddress.address}
               <br /> {order.shippingAddress.postalCode}
