@@ -44,12 +44,12 @@ textarea:focus {
     padding: 10px 0px 6px 0px;
 }
 .Announcement .col-md-6 p {
-    color: hsl(0, 0%, 47%);
+    color: hsl(271, 83%, 16%);
     margin-right: 6rem;
     font-size: 15px;
 }
 .Announcement .col-12 a {
-    color: hsl(0, 0%, 47%);
+    color: hsl(271, 83%, 16%);
     margin-right: 15px;
     font-size: 15px;
     cursor: pointer;
@@ -167,7 +167,7 @@ textarea:focus {
     position: relative;
     overflow: hidden;
     width: 100%;
-    background-color: hsl(255, 100%, 97%);
+    background-color: hsl(255, 100%, 97.7%);
     border-radius: 5px;
 }
 .shopBack img {
@@ -267,7 +267,7 @@ textarea:focus {
     padding: 40px 0;
     box-shadow: 0px 0px 27px 0px rgb(243, 243, 243);
 }
-.info-image {
+.info-image  {
     width: 50px;
     height: 50px;
     border: 2px solid hsl(248, 68%, 58%);
@@ -292,7 +292,7 @@ textarea:focus {
     margin-bottom: 50px;
 }
 .single-image {
-    background-color: #f3fbf7;
+    background-color: hsl(255, 100%, 97%);
     margin-right: 20px;
     height: 700px;
     display: flex;

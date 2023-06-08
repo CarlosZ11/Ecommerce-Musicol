@@ -33,7 +33,7 @@ const SingleProduct = ({ history, match }) => {
 
   useEffect(() => {
     if (successCreateReview) {
-      alert("Review Submitted");
+      // alert("Reseña enviada");
       setRating(0);
       setComment("");
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
