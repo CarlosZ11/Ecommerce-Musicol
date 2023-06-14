@@ -17,6 +17,11 @@ const OrderScreen = ({ match }) => {
   const orderId = match.params.id;
   const dispatch = useDispatch();
 
+  const convertToUSD = (amountCOP) => {
+    const rate = 4183.86; // Tasa de cambio actualizada
+    return (amountCOP / rate).toFixed(2); // Redondea el resultado a 2 decimales
+  };
+
   const orderDetails = useSelector((state) => state.orderDetails);
   const { order, loading, error } = orderDetails;
   const orderPay = useSelector((state) => state.orderPay);
@@ -224,7 +229,7 @@ const OrderScreen = ({ match }) => {
                       <Loading />
                     ) : (
                       <PayPalButton
-                        amount={order.totalPrice}
+                        amount={convertToUSD(order.totalPrice)}
                         onSuccess={successPaymentHandler}
                       />
                     )}
